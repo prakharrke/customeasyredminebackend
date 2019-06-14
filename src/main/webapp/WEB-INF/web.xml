@@ -10,8 +10,78 @@
   	<description></description>
   	<servlet-class>servlets.Authentication</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>GetLoginPage</servlet-name>
+  	<display-name>GetLoginPage</display-name>
+  	<description></description>
+  	<servlet-class>servlets.GetLoginPage</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TokenValidation</servlet-name>
+  	<display-name>TokenValidation</display-name>
+  	<description></description>
+  	<servlet-class>servlets.TokenValidation</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AutoCompleteProjects</servlet-name>
+  	<display-name>AutoCompleteProjects</display-name>
+  	<description></description>
+  	<servlet-class>servlets.AutoCompleteProjects</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetProjectIssues</servlet-name>
+  	<display-name>GetProjectIssues</display-name>
+  	<description></description>
+  	<servlet-class>servlets.GetProjectIssues</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetIssues</servlet-name>
+  	<display-name>GetIssues</display-name>
+  	<description></description>
+  	<servlet-class>servlets.GetIssues</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetIssueDetails</servlet-name>
+  	<display-name>GetIssueDetails</display-name>
+  	<description></description>
+  	<servlet-class>servlets.GetIssueDetails</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DownloadAttachment</servlet-name>
+  	<display-name>DownloadAttachment</display-name>
+  	<description></description>
+  	<servlet-class>servlets.DownloadAttachment</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Authentication</servlet-name>
   	<url-pattern>/Authentication</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetLoginPage</servlet-name>
+  	<url-pattern>/GetLoginPage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TokenValidation</servlet-name>
+  	<url-pattern>/TokenValidation</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AutoCompleteProjects</servlet-name>
+  	<url-pattern>/AutoCompleteProjects</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetProjectIssues</servlet-name>
+  	<url-pattern>/GetProjectIssues</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetIssues</servlet-name>
+  	<url-pattern>/GetIssues</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetIssueDetails</servlet-name>
+  	<url-pattern>/GetIssueDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DownloadAttachment</servlet-name>
+  	<url-pattern>/DownloadAttachment</url-pattern>
   </servlet-mapping>
 </web-app>
